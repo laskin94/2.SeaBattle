@@ -8,6 +8,7 @@ public class Cell {
     protected int x, y;
     private Ship ship;
     private boolean wasFired = false;
+    private boolean AreaOfDeadShip = false;
 
     Cell(int x, int y, Ship ship) {
         this.x = x;
@@ -29,6 +30,12 @@ public class Cell {
 
     public boolean isShip() {
         return ship != null;
+    }
+
+    public void setAreaOfDeadShip() { this.AreaOfDeadShip = true;}
+
+    public boolean isAreaOfDeadShip() {
+        return AreaOfDeadShip;
     }
 
 }

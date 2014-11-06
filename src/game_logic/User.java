@@ -7,7 +7,7 @@ package game_logic;
 public class User {
     private String name;
 
-    public void setName(String name) {
+    User(String name) {
         this.name = name;
     }
 
